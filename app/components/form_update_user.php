@@ -34,7 +34,7 @@
                 </select>
             </div>
         </div>
-        <div class="card-footer">
+        <div class="card-footer d-flex justify-content-end">
             <button class="btn btn-primary" type="submit">SIMPAN PERUBAHAN</button>
         </div>
     </div>
