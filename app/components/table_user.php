@@ -31,7 +31,7 @@ $result = $conn->query($sql);
                         <td align="center"><?= $row['role'] ?></td>
                         <td>
                             <a href="" class="btn btn-sm btn-primary">Edit</a>
-                            <a href="../services/hapus_user.php?id=<?= $row['id'] ?>" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data Ini?')"  class="btn btn-sm btn-primary">Hapus</a>
+                            <button type="button" onclick="hapus_user(<?= $row['id'] ?>)"  class="btn btn-sm btn-danger">Hapus</button>
                         </td>
                     </tr>
                 <?php endwhile; ?>
