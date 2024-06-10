@@ -39,11 +39,18 @@ Daftar persyaratan sistem yang diperlukan untuk menjalankan proyek ini, seperti:
 - Silahkan Copy dan Paste/Clone ke direktory <b>/var/www/html</b> jika anda menggunakan native apache pada Sistem operasi linux/distro
 
 - Lakukan Import file [lksdb.sql](lksdb.sql) kedalam RDBMS yang anda gunakan (dalam hal ini AWS RDS/Mysql)
+- Lalu Kakukan Import kembali atau Jalankan File [seeder.sql](seeder.sql) untuk menginisiasi data permulaan atau contoh;
 
 
 ## Penggunaan
 
 Penjelasan tentang cara menggunakan proyek ini, termasuk contoh kode atau screenshot jika diperlukan.
+
+### User Default: 
+    - username : admin
+    - password : admin
+
+untuk detil data silahkan lihat file [seeder.sql](seeder.sql)
 
 ## Kontribusi
 
