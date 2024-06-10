@@ -3,7 +3,7 @@
 $sql = "SELECT * FROM sekolah";
 $result = $conn->query($sql);
 ?>
-<div class="container mt-5">
+<div class="container mt-2">
     <div class="row align-items-center ">
         <div class="col-md-10">
         <div class="alert alert-success px-2">
@@ -11,7 +11,7 @@ $result = $conn->query($sql);
         </div>
         </div>
         <div class="col-md-2">
-            <a class="btn btn-primary" href="form_tambah_sekolah.php">Tambah Data</a>
+            <a class="btn btn-primary" href="tambah_sekolah.php">Tambah Data</a>
         </div>
     </div>
 </div>
@@ -38,7 +38,7 @@ $result = $conn->query($sql);
                         <td><?= $row['telepon'] ?></td>
                         <td><?= $row['email'] ?></td>
                         <td align="center">
-                            <a href="form_edit_sekolah.php" class="btn btn-sm btn-primary">Edit</a>
+                            <a href="edit_sekolah.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-primary">Edit</a>
                             <button type="button" onclick="hapus_sekolah(<?= $row['id'] ?>)"  class="btn btn-sm btn-danger">Hapus</button>
                         </td>
                     </tr>

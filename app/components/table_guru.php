@@ -3,7 +3,7 @@
 $sql = "SELECT * FROM sekolah";
 $result = $conn->query($sql);
 ?>
-<div class="container mt-5">
+<div class="container mt-2">
     <div class="row align-items-center ">
         <div class="col-md-10">
         <div class="alert alert-success px-2">
@@ -11,9 +11,14 @@ $result = $conn->query($sql);
         </div>
         </div>
         <div class="col-md-2">
-            <a class="btn btn-primary" href="form_tambah_guru.php">Tambah Data</a>
+            <a class="btn btn-primary" href="tambah_guru.php">Tambah Data</a>
         </div>
     </div>
 </div>
 
-<div class="container mt-3"></div>
+<div class="container mt-3">
+    <!-- Lengkapi Skrip Berikut -->
+    <pre>
+        Silahkan Lengkapi Skrip Dari halaman berikut
+    </pre>
+</div>

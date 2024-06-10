@@ -3,7 +3,7 @@
 $sql = "SELECT users.*, sekolah.nama as nama_sekolah FROM users LEFT JOIN sekolah ON users.sekolah_id = sekolah.id";
 $result = $conn->query($sql);
 ?>
-<div class="container mt-5">
+<div class="container mt-2">
     <div class="row align-items-center">
         <div class="col-md-10">
         <div class="alert alert-success px-2">
@@ -11,7 +11,7 @@ $result = $conn->query($sql);
         </div>
         </div>
         <div class="col-md-2">
-            <a class="btn btn-primary" href="form_tambah_user.php">Tambah Data</a>
+            <a class="btn btn-primary" href="tambah_user.php">Tambah Data</a>
         </div>
     </div>
 </div>
@@ -37,7 +37,7 @@ $result = $conn->query($sql);
                         <td><?= $row['sekolah_id'] == 0 || $row['sekolah_id']==NULL ? '-' : $row['nama_sekolah'] ?></td>
                         <td align="center"><?= $row['role'] ?></td>
                         <td align="center">
-                            <a href="" class="btn btn-sm btn-primary">Edit</a>
+                            <a href="edit_user.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-primary">Edit</a>
                             <button type="button" onclick="hapus_user(<?= $row['id'] ?>)"  class="btn btn-sm btn-danger">Hapus</button>
                         </td>
                     </tr>
