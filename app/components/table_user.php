@@ -4,8 +4,15 @@ $sql = "SELECT users.*, sekolah.nama as nama_sekolah FROM users LEFT JOIN sekola
 $result = $conn->query($sql);
 ?>
 <div class="container mt-5">
-    <div class="alert alert-success px-2">
-        Tabel Manajemen Data Pengguna
+    <div class="row align-items-center">
+        <div class="col-md-10">
+        <div class="alert alert-success px-2">
+            Tabel Manajemen Data Pengguna
+        </div>
+        </div>
+        <div class="col-md-2">
+            <a class="btn btn-primary" href="form_tambah_user.php">Tambah Data</a>
+        </div>
     </div>
 </div>
 <div class="container mt-3">
