@@ -38,6 +38,8 @@ Daftar persyaratan sistem yang diperlukan untuk menjalankan proyek ini, seperti:
 - Silahkan Copy Paste ke direktori <b>c:\xampp\htdoc</b> Jika Anda menggunakan XAMPP/WAMPP pada Sistem operasi windows/linux sebagai webserver
 - Silahkan Copy dan Paste/Clone ke direktory <b>/var/www/html</b> jika anda menggunakan native apache pada Sistem operasi linux/distro
 
+- Lakukan Import file [lksdb.sql](lksdb.sql) kedalam RDBMS yang anda gunakan (dalam hal ini AWS RDS/Mysql)
+
 
 ## Penggunaan
 
