@@ -16,4 +16,18 @@ $result = $conn->query($sql);
     </div>
 </div>
 
-<div class="container mt-3"></div>
+<div class="container mt-3">
+    <table class="table table-bordered table-stripped" width="100%">
+        <thead>
+            <tr align="center">
+                <th>#No</th>
+                <th>Nama Sekolah</th>
+                <th>Alamat</th>
+                <th>Telepon</th>
+                <th>Email</th>
+                <th>Pilihan</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
