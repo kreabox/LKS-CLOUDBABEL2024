@@ -16,11 +16,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 <body>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-6 mx-auto">
+            <div class="col-md-4 mx-auto">
+                <div class="d-flex justify-content-center align-items-center mb-3">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-md-0 text-dark text-decoration-none">
+                        <img src="/../../assets/lks2024.png" alt="" class="img-fluid" width="128">
+                    </a>
+                </div>
                 <div class="card">
-                    <div class="card-header">
-                        Login
-                    </div>
                     <div class="card-body">
                         <form action="./services/login.php" method="POST">
                             <div class="form-group">

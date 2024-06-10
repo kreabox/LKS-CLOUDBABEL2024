@@ -36,7 +36,7 @@ $result = $conn->query($sql);
                         <td><?= $row['nama'] == '' || $row['nama'] ==NULL ? '-' : $row['nama'] ?></td>
                         <td><?= $row['sekolah_id'] == 0 || $row['sekolah_id']==NULL ? '-' : $row['nama_sekolah'] ?></td>
                         <td align="center"><?= $row['role'] ?></td>
-                        <td>
+                        <td align="center">
                             <a href="" class="btn btn-sm btn-primary">Edit</a>
                             <button type="button" onclick="hapus_user(<?= $row['id'] ?>)"  class="btn btn-sm btn-danger">Hapus</button>
                         </td>

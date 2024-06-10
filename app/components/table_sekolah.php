@@ -28,6 +28,23 @@ $result = $conn->query($sql);
                 <th>Pilihan</th>
             </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+            <?php if (!empty($result) && $result->num_rows > 0) : ?>
+                <?php while($row = $result->fetch_assoc()): ?>
+                    <tr>
+                        <td width="5%" align="center"><?= $row['id'] ?></td>
+                        <td><?= $row['nama'] ?></td>
+                        <td><?= $row['alamat'] ?></td>
+                        <td><?= $row['telepon'] ?></td>
+                        <td><?= $row['email'] ?></td>
+                        <td align="center">
+                            <a href="form_edit_sekolah.php" class="btn btn-sm btn-primary">Edit</a>
+                            <button type="button" onclick="hapus_sekolah(<?= $row['id'] ?>)"  class="btn btn-sm btn-danger">Hapus</button>
+                        </td>
+                    </tr>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php $conn->close(); ?>
+        </tbody>
     </table>
 </div>
